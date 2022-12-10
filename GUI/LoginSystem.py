@@ -9,7 +9,6 @@ root = CTk()
 root.geometry("450x350+450+100")
 root.title("Login and SignUp")
 root.resizable(False, False)
-#=================== creating files ====================
 
 path = os.getcwd()
 name = "LoginSystem.py"
@@ -27,7 +26,6 @@ if not os.path.exists(newpath):
     if not os.path.exists(f"{newpath}\\text.txt"):
         open(f"{newpath}\\text.txt", "a").close()
 
-#=======================================
 root.iconbitmap("text.ico")
 login_frame = CTkFrame(root, corner_radius=20)
 login_frame.pack(pady=30, padx=20, fill="both", expand=True)
