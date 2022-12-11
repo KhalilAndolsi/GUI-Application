@@ -3,7 +3,7 @@ from tkinter import messagebox
 from customtkinter import *
 import os
 
-set_appearance_mode("system")
+set_appearance_mode("dark")
 set_default_color_theme("green")
 root = CTk()
 root.geometry("450x350+450+100")
@@ -11,7 +11,7 @@ root.title("Login and SignUp")
 root.resizable(False, False)
 
 path = os.getcwd()
-name = "LoginSystem.py"
+name = os.path.basename(__file__)
 
 def find(name, path):
     for root, dirs, files in os.walk(path):
